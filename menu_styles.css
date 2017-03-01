@@ -1,0 +1,189 @@
+
+#ui {
+	pointer-events: none;
+}
+
+#ui div {
+	pointer-events: all;
+}
+
+#menu {
+	height: 12vw;
+	width: 100%;
+	overflow:hidden; 
+	float:left;
+	background-color: red;
+	background: linear-gradient(red, #aa0000);
+	box-shadow: 1vw 1vw 1vw rgba(0, 0, 0, 0.5)
+}
+
+#menu img {
+	height: 100%;
+}
+
+.uiButton {
+	background-color: red;
+	border-style: solid;
+    border-color: #ad0000;
+    border-width: 1px;
+	color: white;
+	text-align: center;
+}
+
+#menu .menu_button {
+	top: 0%;
+    width: 12vw;
+    height: 12vw;
+	padding: 2vw;
+}
+
+#user_button {
+	right: 14vw;
+}
+
+#user_button img{
+	left: 50%;
+	transform: translate( -50%, 0% );
+	position: relative;
+	height: 100%;
+}
+
+#user_button:hover {
+	background-color: #ad0000;
+	border-color: #ad0000 #ad0000 #FF0000 #FF0000;
+}
+
+#menu_button {
+    right: 0%;
+}
+
+#menu_button div {
+	left: 2.5vw;
+	width: 7vw;
+	height: 1vw;
+	background-color: white;
+}
+
+#menu_button #top {
+	top: 3vw;
+}
+#menu_button #middle {
+	top: 5.5vw;
+}
+#menu_button #bottom {
+	bottom: 3vw;
+}
+
+#menu_button:hover {
+	background-color: #ad0000;
+	border-color: #ad0000 #ad0000 #FF0000 #FF0000;
+}
+
+
+#menu_options {
+	background-color:xx0000;
+	left:100%;
+	top: 0%;
+	height: 100vh;
+	width: 80%;
+	background-color:#101010;
+}
+
+#menu_options .button {
+	width: 100%;
+	height: 10vh;
+	background-color:#212121;
+	background-color:black;
+	cursor: default;
+	color: white;
+	font-size: 5vh;
+	padding: 2.5vh;
+	border-width: 0vw 0vw 1vw 0vw;
+	border-style: solid;
+	border-color: grey;
+}
+
+#menu_options .button:hover {
+	background-color: #323232;
+	padding-left: 5vw;
+}
+
+#menu_log  {
+	position: absolute;
+	top: 0%;
+}
+
+#menu_log  #login_settings {
+	position: absolute;
+	right: 10px;
+	height: 5vh;
+	width: 5vh;
+	padding: 0px;
+}
+
+#menu_log  #login_settings img{
+	height: 100%;
+	width: 100%;
+}
+
+#user_login {
+	display: none;
+}
+
+#login_panel {
+	top: 50%;
+	transform: translate( 0%, -50% );
+	left: 15%;
+	width: 70%;
+	padding: 5%;
+	background-color: #aa0000;
+	color: white;
+	border: 1vw;
+	border-style: solid;
+	border-color: red;
+	border-radius: 1.5vw;
+	box-shadow: 1vw 1vw 1vw rgba(0, 0, 0, 0.5);
+}
+
+#login_panel div{
+	padding: 2%;
+	font-size: 4vh;
+}
+#login_panel div div{
+	padding: 2%;
+	font-size: 4vh;
+	width: 100%;
+}
+#login_panel div input{
+	padding: 2%;
+	font-size: 4vh;
+	width: 100%;
+}
+
+#login_panel div.uiButton{
+	padding: 2%;
+	font-size: 4vh;
+	width: 100%;
+	margin-top: 2vh;
+}
+#login_panel div.uiButton:hover{
+	background: #ff1111;
+	border-color: #ffaaaa;
+}
+
+#login_panel #waiting {
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.75);
+	display: none;
+}
+
+#login_panel #waiting #feedback{
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50% );
+	text-align: center;
+}
+

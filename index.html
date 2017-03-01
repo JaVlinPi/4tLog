@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <title>4tLoG</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="menu_styles.css">
+	<link rel="stylesheet" href="content_styles.css">
+	
+    <script src="jquery-1.11.1.min[1].js"></script>
+    <script src="com/controllers/AssetController.js"></script>
+    <script src="com/controllers/AccountController.js"></script>
+    <script src="com/controllers/AppController.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+	<div id="orientate">Site is only viewable on an upright phone.</div> 
+	<div id="page">
+		<div id="background" class="pageLayer">
+		  <img src='images.logo' alt='4tLoG'>
+		</div>
+		<canvas id="myCanvas" width="600" height="800" ></canvas>
+		<div id="body" class="pageLayer pa" >
+			<div id="content">
+				<div id="welcome" class="content_box">
+					<div id="heading" class="content_heading">Welcome to 4tLoG</div>
+					<div id="text" class="content_body">Welcome to 4tLog, where we love games. This is just filler text because I could not think of anything else to write. It just needs to be long enough to act like a real welcome message. So have a look around and enjoy yourself.</div>
+				</div>
+				<div id="news" class="content_section">
+					<div id="news_head" class="section_head" >News</div>
+					<div id="news1" class="content_box">
+						<div id="heading" class="content_heading">First News Story</div>
+						<div id="date" class="content_date">10th April 2016</div>
+						<div id="text" class="content_body">This is the first news story, it will have the content of the newest news story. It should be the most recent news of the site.</div>
+					</div>
+					<div id="news2" class="content_box">
+						<div id="heading" class="content_heading">Second News Story</div>
+						<div id="date" class="content_date">1st December 2015</div>
+						<div id="text" class="content_body">This is the first news story, it will have the content of the newest news story. It should be the most recent news of the site.</div>
+					</div>
+					<div id="news3" class="content_box">
+						<div id="heading" class="content_heading">Third News Story</div>
+						<div id="date" class="content_date">23rd October 2015</div>
+						<div id="text" class="content_body">This is the first news story, it will have the content of the newest news story. It should be the most recent news of the site.</div>
+					</div>
+					<div id="news_more" class="more_btn">More News...</div>
+				</div>
+			</div>
+			<div id="menu_options" class="pa">
+				<div id="main_menu">
+					<div id="menu_home" class="button">Home</div>
+					<div id="menu_games" class="button hover">Games</div>
+					<div id="menu_contact" class="button hover">Contact</div>
+				</div>
+				<div id="user_menu">
+					<div id="menu_login_field">
+						<div id="menu_login" class="button hover">Login</div>
+						<div id="menu_log" class="button">
+							<span id="userID">Username</span>
+							<span id="login_settings" class="button hover">
+								<img src='images.settings'>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="ui" class="pageLayer">
+			<div id="menu">
+				<img src='images.menuLogo' alt='4tLoG'>
+				<div id="user_button" class="menu_button pa">
+					<img src='images.userIcon'>
+				</div>
+				<div id="menu_button" class="menu_button pa">
+					<div id="top" class="pa"></div>
+					<div id="middle" class="pa"></div>
+					<div id="bottom" class="pa"></div>
+				</div>
+			</div>
+			<div id="user_login">
+				<div class="fade"></div>
+				<div id="login_panel" class="pa bg_grey" >
+					<div>
+						<div id="name-text" class="uiElement">Username:</div>
+						<input id="name-input" class="uiElement" autocomplete="off" />
+					</div>
+					<div>
+						<div id="pass-text" class="uiElement">Password:</div>
+						<input id="pass-input" class="uiElement" autocomplete="off" />
+					</div>
+					<div>
+						<div id="login-button" class="uiButton">Login</div>
+						<div id="register-button" class="uiButton">Register</div>
+					</div>
+					<div id="waiting" class="pa">
+						<div id="feedback" class="pa">Waiting</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <script src="main_ui.js"></script>
+  </body>
+</html>
